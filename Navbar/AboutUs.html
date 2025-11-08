@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylora | About Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lavenderblush;
+    }
+
+    /* Header */
+    .header-container {
+      background-color: black;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 40px;
+        color: white;
+        box-sizing: border-box;
+
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          .img {
+            height: 70px;
+          }
+
+          .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: deeppink;
+            letter-spacing: 1px;
+          }
+        }
+
+        .c1 {
+          display: flex;
+          align-items: center;
+          flex: 1;
+          margin: 0 40px;
+
+          input {
+            flex: 1;
+            padding: 10px 12px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+          }
+
+          .search-btn {
+            padding: 10px 18px;
+            background-color: deeppink;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+
+          .search-btn:hover {
+            background-color: hotpink;
+          }
+        }
+
+        .right {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          .header-links {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+
+          a {
+            color: palevioletred;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+          }
+
+          a:hover {
+            color: white;
+          }
+
+
+          .cart {
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+          }
+
+          a {
+            padding: 6px 10px;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            color: palevioletred;
+            transition: 0.3s;
+
+            a:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: deeppink;
+      height: 50px;
+      font-weight: bold;
+      font-size: 15px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: last baseline;
+      gap: 30px;
+
+      a {
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: large;
+        text-decoration: none;
+        /* color: black; */
+      }
+
+      a:hover {
+        background-color: white;
+      }
+    }
+
+    /* About Us Section */
+    .center {
+      text-align: center;
+      padding: 50px;
+      background-color: #fff0f5;
+
+      h2 {
+        color: deeppink;
+        margin-bottom: 20px;
+        font-size: 32px;
+      }
+
+      p {
+        width: 70%;
+        margin: 10px auto;
+        line-height: 1.8;
+        font-size: 18px;
+      }
+
+      .highlight {
+        color: deeppink;
+        font-weight: bold;
+      }
+
+      .values {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 30px auto;
+        width: 70%;
+        padding: 30px;
+
+        h3 {
+          color: deeppink;
+        }
+
+        ul {
+          list-style-type: none;
+          text-align: left;
+          padding-left: 0;
+          font-size: 17px;
+          line-height: 1.8;
+
+          li::before {
+            content: "💠 ";
+          }
+        }
+      }
+    }
+
+
+    /* Footer */
+    .footer {
+      background-color: deeppink;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 16px;
+      margin-top: 30px;
+
+      img {
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+        margin: 8px;
+      }
+
+      img:hover {
+        transform: scale(1.5);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header-container">
+    <div class="header">
+      <div class="left">
+        <img class="img" src="../header.html/Logo.webp" alt="Stylora Logo">
+        <span class="brand-name">Stylora</span>
+      </div>
+
+      <div class="c1">
+        <input type="text" placeholder="Search for kurthis, tops, sarees...">
+        <button class="search-btn">🔍</button>
+      </div>
+
+      <div class="right">
+        <div class="header-links">
+          <a href="#">Wishlist</a>
+          <a href="#">Orders</a>
+        </div>
+        <img class="cart" src="https://i.pinimg.com/originals/c2/af/6e/c2af6e4f4ef43d2afda4b24894d3f3b8.png" alt="Cart">
+        <a href="../header.html/Login.html">Login</a>
+        <a href="../header.html/Logout.html">Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Products.html">Products</a>
+    <a href="Projects.html">Projects</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="ContactUs.html">Contact Us</a>
+  </div>
+
+  <!-- About Us Section -->
+  <div class="center">
+    <h2>About Stylora</h2>
+    <p>Founded in <span class="highlight">2025</span>, Stylora was born with a dream — to bring <span
+        class="highlight">style, comfort, and confidence</span> to every wardrobe. We combine modern design with quality
+      craftsmanship to make fashion accessible and affordable for everyone.</p>
+    <p>At Stylora, we believe that what you wear is more than just clothing — it’s an expression of your personality,
+      mood, and story. That’s why our collections are carefully curated to make you feel <span
+        class="highlight">beautiful, empowered, and unique</span>.</p>
+
+    <div class="values">
+      <h3>🌸 Our Core Values</h3>
+      <ul>
+        <li><strong>Quality First:</strong> Every piece is designed with attention to detail, ensuring comfort and
+          durability.</li>
+        <li><strong>Customer Happiness:</strong> Your satisfaction is at the heart of everything we do.</li>
+        <li><strong>Trendy Yet Timeless:</strong> We mix the latest fashion trends with classic styles for all
+          occasions.</li>
+        <li><strong>Eco-Conscious Fashion:</strong> We promote sustainable materials and responsible production.</li>
+      </ul>
+    </div>
+
+    <p>With an easy-to-navigate online platform and secure checkout, Stylora makes online shopping effortless. From
+      festive wear to daily comfort, our range includes kurtis, tops, accessories, and more — all crafted to suit your
+      taste and lifestyle.</p>
+
+    <p><strong>Our Mission:</strong> To empower individuals to express themselves confidently through fashion.</p>
+    <p><strong>Our Vision:</strong> To become India’s most trusted online fashion destination for stylish yet affordable
+      apparel.</p>
+
+    <p><em>“Dress Confidently. Shop Smartly.”</em> — that’s not just our tagline, it’s our promise to every customer who
+      chooses Stylora.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Stylora. All rights reserved.</p>
+    <p>Contact us: stylora.support@gmail.com | Phone: +91 98765 43210</p>
+    <img src="https://tse1.mm.bing.net/th/id/OIP.UOWzkFisvM035CT1xuVoBQHaHW?pid=Api&P=0&h=180" alt="">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.i0iz1VjijKJLVqdiibW7LAHaHa?pid=Api&P=0&h=180" alt="">
+    <img src="https://png.pngtree.com/png-clipart/20221019/original/pngtree-whatsapp-icon-png-image_8704827.png" alt="">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.BCOgkDFoXALNblLx8Mi0IQHaHa?pid=Api&P=0&h=180" alt="">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.S5AlRQcHrpCLzWUdKMWS2AHaHa?pid=Api&P=0&h=180" alt="">
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+       background-color: lavenderblush;
+    }
+
+    .register {
+      text-align: center;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      width: 320px;
+    }
+
+    .register label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .register input {
+      width: 95%;
+      padding: 8px;
+      margin: 6px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button{
+         padding: 10px;
+         margin: 15px;
+         font-weight: bold;
+         font-size: 15px;
+    }
+    .submit{
+        background-color: green;
+
+    }
+
+    .cancel{
+        background-color: red;
+       
+    }
+  </style>
+</head>
+<body>
+  <div class="register">
+    <label for="Username">Username</label>
+    <input type="text" name="username" id="Username">
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+
+    <label for="ConfirmPassword">Confirm Password</label>
+    <input type="password" name="ConfirmPassword" id="ConfirmPassword">
+
+    <button class="submit">Submit</button>
+    <button class="cancel">Cancel</button>
+  </div>
+</body>
+</html>

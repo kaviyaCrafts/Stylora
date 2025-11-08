@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylora | Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lavenderblush;
+    }
+
+    /* Header */
+    .header-container {
+      background-color: black;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 40px;
+        color: white;
+        box-sizing: border-box;
+
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          .img {
+            height: 70px;
+          }
+
+          .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: deeppink;
+            letter-spacing: 1px;
+          }
+        }
+
+        .c1 {
+          display: flex;
+          align-items: center;
+          flex: 1;
+          margin: 0 40px;
+
+          input {
+            flex: 1;
+            padding: 10px 12px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+          }
+
+          .search-btn {
+            padding: 10px 18px;
+            background-color: deeppink;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+
+          .search-btn:hover {
+            background-color: hotpink;
+          }
+        }
+
+        .right {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          .header-links {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+
+          a {
+            color: palevioletred;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+          }
+
+          a:hover {
+            color: white;
+          }
+
+
+          .cart {
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+          }
+
+          a {
+            padding: 6px 10px;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            color: palevioletred;
+            transition: 0.3s;
+
+            a:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+
+    .navbar {
+      background-color: deeppink;
+      height: 50px;
+      font-weight: bold;
+      font-size: 15px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: last baseline;
+      gap: 30px;
+
+      a {
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: large;
+        text-decoration: none;
+        /* color: black; */
+      }
+
+      a:hover {
+        background-color: white;
+      }
+    }
+
+    .center {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      text-align: center;
+      background-color: #fff0f5;
+
+
+      .hero {
+        background-image: url('banner.jpg');
+        background-size: cover;
+        background-position: center;
+        color: hotpink;
+        padding: 120px 20px;
+      }
+
+      .hero h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      .hero a {
+        background-color: deeppink;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .featured {
+        margin-top: 50px;
+      }
+
+      .featured h2 {
+        color: deeppink;
+      }
+    }
+
+    .footer {
+      background-color: deeppink;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 16px;
+      margin-top: 30px;
+
+      img {
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+        margin: 8px;
+      }
+
+      img:hover {
+        transform: scale(1.5);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-container">
+    <div class="header">
+      <div class="left">
+        <img class="img" src="../header.html/Logo.webp" alt="Stylora Logo">
+        <span class="brand-name">Stylora</span>
+      </div>
+
+      <div class="c1">
+        <input type="text" placeholder="Search for kurthis, tops, sarees...">
+        <button class="search-btn">🔍</button>
+      </div>
+
+      <div class="right">
+        <div class="header-links">
+          <a href="#">Wishlist</a>
+          <a href="#">Orders</a>
+        </div>
+        <img class="cart" src="https://i.pinimg.com/originals/c2/af/6e/c2af6e4f4ef43d2afda4b24894d3f3b8.png" alt="Cart">
+        <a href="../header.html/Login.html">Login</a>
+        <a href="../header.html/Logout.html">Logout</a>
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Products.html">Products</a>
+    <a href="Projects.html">Projects</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="ContactUs.html">Contact Us</a>
+  </div>
+  <div class="center">
+    <div class="hero">
+      <h1>Welcome to Stylora</h1>
+      <p>Find Your Perfect Fit with the Latest Trends!</p>
+      <a href="products.html">Shop Now</a>
+    </div>
+
+    <div class="featured">
+      <h2>🔥 Trending Categories</h2>
+      <p>Kurthis | Tops | Sarees | Western Wear | Ethnic Sets</p>
+      <p><strong>Flat 20% Off on First Purchase!</strong></p>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2025 Stylora. All rights reserved.</p>
+    <p>Contact us: stylora.support@gmail.com | Phone: +91 98765 43210</p>
+    <img src="https://tse1.mm.bing.net/th/id/OIP.UOWzkFisvM035CT1xuVoBQHaHW?pid=Api&P=0&h=180" alt="">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.i0iz1VjijKJLVqdiibW7LAHaHa?pid=Api&P=0&h=180" alt="">
+    <img src="https://png.pngtree.com/png-clipart/20221019/original/pngtree-whatsapp-icon-png-image_8704827.png" alt="">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.BCOgkDFoXALNblLx8Mi0IQHaHa?pid=Api&P=0&h=180" alt="">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.S5AlRQcHrpCLzWUdKMWS2AHaHa?pid=Api&P=0&h=180" alt="">
+  </footer>
+</body>
+
+</html>

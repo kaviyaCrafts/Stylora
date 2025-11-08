@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylora | Project Overview</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lavenderblush;
+        }
+
+        /* HEADER */
+        .header-container {
+            background-color: black;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0 40px;
+                color: white;
+                box-sizing: border-box;
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    .img {
+                        height: 70px;
+                    }
+
+                    .brand-name {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: deeppink;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .c1 {
+                    display: flex;
+                    align-items: center;
+                    flex: 1;
+                    margin: 0 40px;
+
+                    input {
+                        flex: 1;
+                        padding: 10px 12px;
+                        border-radius: 5px 0 0 5px;
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                    }
+
+                    .search-btn {
+                        padding: 10px 18px;
+                        background-color: deeppink;
+                        border: none;
+                        color: white;
+                        font-size: 16px;
+                        border-radius: 0 5px 5px 0;
+                        cursor: pointer;
+                        transition: 0.3s;
+                    }
+
+                    .search-btn:hover {
+                        background-color: hotpink;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    .header-links {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                    }
+
+                    a {
+                        color: palevioletred;
+                        font-weight: bold;
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+
+                    a:hover {
+                        color: white;
+                    }
+
+
+                    .cart {
+                        height: 40px;
+                        width: 40px;
+                        cursor: pointer;
+                    }
+
+                    a {
+                        padding: 6px 10px;
+                        font-weight: bold;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: palevioletred;
+                        transition: 0.3s;
+
+                        a:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: deeppink;
+            height: 50px;
+            font-weight: bold;
+            font-size: 15px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: last baseline;
+            gap: 30px;
+
+            a {
+                padding: 10px 15px;
+                font-weight: bold;
+                font-size: large;
+                text-decoration: none;
+                /* color: black; */
+            }
+
+            a:hover {
+                background-color: white;
+            }
+        }
+
+        /* MAIN CONTENT */
+        .center {
+            padding: 40px;
+            text-align: center;
+            line-height: 1.8;
+            background-color: #fff0f5;
+
+            h2 {
+                color: deeppink;
+                margin-bottom: 20px;
+                font-size: 32px;
+            }
+
+            h3 {
+                color: deeppink;
+                margin-top: 30px;
+            }
+
+            p,
+            ul {
+                font-size: 18px;
+                width: 80%;
+                margin: 10px auto;
+                text-align: left;
+            }
+
+
+            img {
+                width: 70%;
+                border-radius: 10px;
+                display: block;
+                margin: 30px auto;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .highlight {
+                color: deeppink;
+                font-weight: bold;
+            }
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: deeppink;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            margin-top: 30px;
+
+            img {
+                height: 35px;
+                width: 35px;
+                cursor: pointer;
+                margin: 8px;
+            }
+
+            img:hover {
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header-container">
+        <div class="header">
+            <div class="left">
+                <img class="img" src="../header.html/Logo.webp" alt="Stylora Logo">
+                <span class="brand-name">Stylora</span>
+            </div>
+
+            <div class="c1">
+                <input type="text" placeholder="Search for kurthis, tops, sarees...">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="right">
+                <div class="header-links">
+                    <a href="#">Wishlist</a>
+                    <a href="#">Orders</a>
+                </div>
+                <img class="cart" src="https://i.pinimg.com/originals/c2/af/6e/c2af6e4f4ef43d2afda4b24894d3f3b8.png"
+                    alt="Cart">
+                <a href="../header.html/Login.html">Login</a>
+                <a href="../header.html/Logout.html">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Projects.html">Projects</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="ContactUs.html">Contact Us</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="center">
+        <h2>Stylora Online Shopping System – Project Overview</h2>
+        <p>
+            The <span class="highlight">Stylora Online Shopping System</span> is a complete web-based e-commerce
+            platform designed to provide
+            users with a smooth and interactive fashion shopping experience. The platform allows customers to browse
+            stylish outfits,
+            manage shopping carts, and place secure orders.
+        </p>
+
+        <h3>🛠 Technologies Used</h3>
+        <ul>
+            <li><strong>Frontend:</strong> HTML, CSS</li>
+            <li><strong>Backend:</strong> Java (Spring Boot Framework)</li>
+            <li><strong>Database:</strong> MySQL</li>
+            <li><strong>Development Tools:</strong> Visual Studio Code, XAMPP, Eclipse</li>
+        </ul>
+
+        <h3>✨ Key Features</h3>
+        <ul>
+            <li>User login and registration with data validation.</li>
+            <li>Product catalog with images, descriptions, and prices.</li>
+            <li>Search and filter products by name, category, or price.</li>
+            <li>Shopping cart management for adding and removing products.</li>
+            <li>Order summary and checkout page.</li>
+            <li>Admin module for managing products and inventory.</li>
+        </ul>
+
+        <h3>📦 System Modules</h3>
+        <ul>
+            <li><strong>User Module:</strong> Handles registration, login, and profile management.</li>
+            <li><strong>Product Module:</strong> Displays product listings and manages categories.</li>
+            <li><strong>Cart Module:</strong> Manages cart operations and total cost calculation.</li>
+            <li><strong>Admin Module:</strong> Allows the admin to manage product data efficiently.</li>
+        </ul>
+
+        <h3>📚 Project Implementation Flow</h3>
+        <p>
+            The project follows a <span class="highlight">Modular Architecture</span> where each module performs a
+            specific function.
+            The frontend communicates with the backend via APIs, and the backend interacts with the MySQL database to
+            handle product and user data.
+        </p>
+
+        <h3>🚀 Future Enhancements</h3>
+        <ul>
+            <li>Integration of online payment gateways (Paytm, Google Pay, UPI).</li>
+            <li>AI-based recommendations for personalized shopping experiences.</li>
+            <li>Customer review and rating system for each product.</li>
+            <li>Order tracking and shipment status notifications.</li>
+            <li>Responsive mobile-friendly design for Android and iOS users.</li>
+        </ul>
+
+
+        <p>
+            The <span class="highlight">Stylora Project</span> combines creativity and technology to redefine how users
+            shop online.
+            It’s an elegant demonstration of full-stack development with a focus on usability, aesthetics, and
+            performance.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Stylora. All rights reserved.</p>
+        <p>Contact us: stylora.support@gmail.com | Phone: +91 98765 43210</p>
+        <img src="https://tse1.mm.bing.net/th/id/OIP.UOWzkFisvM035CT1xuVoBQHaHW?pid=Api&P=0&h=180" alt="">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.i0iz1VjijKJLVqdiibW7LAHaHa?pid=Api&P=0&h=180" alt="">
+        <img src="https://png.pngtree.com/png-clipart/20221019/original/pngtree-whatsapp-icon-png-image_8704827.png"
+            alt="">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.BCOgkDFoXALNblLx8Mi0IQHaHa?pid=Api&P=0&h=180" alt="">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.S5AlRQcHrpCLzWUdKMWS2AHaHa?pid=Api&P=0&h=180" alt="">
+    </footer>
+</body>
+
+</html>
