@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: lavenderblush;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stylora | Login</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* font-family: "Segoe UI", Arial, sans-serif; */
+    background: url('../Images/BackGround.jpg');
+  }
 
-        .login {
-            text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            /* border: 2px solid black; */
-            box-shadow: 0 0 10px #ccc;
-        }
+  .login {
+    background: rgba(255, 255, 255, 0.95);
+    width: 360px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  }
 
-        .login a {
-            display: block;
-            text-decoration: none;
-            border: 1px solid black;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            color: black;
-        }
+  .login h2 {
+    color: deeppink;
+    margin-bottom: 8px;
+    font-size: 28px;
+  }
 
-        .login a:hover {
-            background: deeppink;
-            color: white;
-        }
+  .login p {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
 
-        .login p {
-            margin-top: 50px;
-        }
-    </style>
+  .login a {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  .login a:hover {
+    background-color: deeppink;
+    color: white;
+  }
+
+  #register {
+    background-color: deeppink;
+    color: white;
+    border: none;
+  }
+
+  #register:hover {
+    background-color: hotpink;
+  }
+
+  .note {
+    font-size: 13px;
+    color: gray;
+    margin-top: 15px;
+  }
+</style>
 </head>
-
 <body>
-    <div class="login">
-        <a href="User.html">User Authentication</a>
-        <a href="Admin.html">Admin Authentication</a>
-        <p>If you don't have an account</p>
-        <a href="Register.html">Register here!</a>
-    </div>
-</body>
+  <div class="login">
+    <h2>Welcome to Stylora</h2>
+    <p>Choose how you want to log in</p>
 
+    <a href="User.html"> User Authentication</a>
+    <a href="Admin.html"> Admin Authentication</a>
+
+    <p>New to Stylora?</p>
+    <a href="Register.html" id="register"> Create an Account</a>
+
+    <p class="note">Secure • Simple • Stylish</p>
+  </div>
+</body>
 </html>
+
